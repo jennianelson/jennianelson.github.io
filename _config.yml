@@ -1,0 +1,21 @@
+# Site settings
+title: There and Back Again
+header-img: img/home-bg.png
+email: jennifernelson118@gmail.com
+copyright_name: jennianelson
+description: > # this means to ignore newlines until "baseurl:"
+  A Smalls' Tale
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: jennianelson
+github_username:  jennianelson
+learn_profile: jennianelson
+email_username: jennifernelson118@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
