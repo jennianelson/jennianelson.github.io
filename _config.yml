@@ -4,7 +4,7 @@ header-img: img/home-bg.png
 email: jennifernelson118@gmail.com
 copyright_name: jennianelson
 description: > # this means to ignore newlines until "baseurl:"
-  A Smalls' Tale
+  A Smalls' Tale in Becoming a Web Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: jennianelson
 github_username:  jennianelson
