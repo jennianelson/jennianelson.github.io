@@ -1,11 +1,11 @@
 ---
 layout: post
 title:      "JavaScript .filter() for Newbs Like Me"
-date:       2018-03-28 21:25:16 +0000
+date:       2018-03-28 17:25:17 -0400
 permalink:  javascript_filter_for_newbs_like_me
 ---
 
-I just started learning JavaScript after the wonderful world of Ruby, so my brain is attempting to adjust to the curly braces, excessive parentheses, semi-colon disputes, explicit returns, and how important the year 2015 was.  Things were going along okay until I hit the ** .filter()** method.  I even felt like I was comprehending what was going on "under the hood"--right up until I had to write functions with this method.  To help me (and hopefully you) make sense of it, I'm going to make myself explain it.  Disclaimer: I've just been introduced to this method, so there are most certainly some nuances I am unintentionally leaving out, and probably some "not best practices" involved here, but my code works, so that's something.  Here goes...
+I just started learning JavaScript after the wonderful world of Ruby, so my brain is attempting to adjust to the curly braces, excessive parentheses, semi-colon disputes, explicit returns, and how important the year 2015 was.  Things were going along okay until I hit the **.filter()** method.  I even felt like I was comprehending what was going on "under the hood"...right up until I had to actually write my own functions.  It's like that moment in French class when you're feeling all confident because you finally figured out how to conjugate verbs, but then your teacher is like, "Okay, now use them correctly when speaking."  To help me (and hopefully you) make sense of how this method works, I'm going to make myself explain it.  Disclaimer: I've just been introduced to this method, so there are most certainly some nuances I am (unintentionally) leaving out, and potentionally some "not best practices" involved here, but my code works, so that's something.  Here goes...
 
 **.filter ()** allows us to select certain elements from an array and return them in a **new array**.  The original array could contain strings, numbers, or objects.  Here's example of an array of objects:
 
