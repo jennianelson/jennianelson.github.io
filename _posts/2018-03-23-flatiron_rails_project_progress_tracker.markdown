@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Flatiron Rails Project: Progress Tracker"
-date:       2018-03-24 00:13:30 +0000
+date:       2018-03-23 20:13:31 -0400
 permalink:  flatiron_rails_project_progress_tracker
 ---
 
@@ -114,17 +114,13 @@ I used the [Devise](https://github.com/plataformatec/devise) gem for authenticat
 
 <a href="https://imgur.com/Fve89fS"><img src="https://i.imgur.com/Fve89fS.png" title="source: imgur.com" /></a>
 
-#### Managing Users (User#Index)
+#### Managing Users (User#Index and User#Show)
 
 * Another admin feature is the ability to delete a user's account or to change a user's role.  The default role for a new user is "student," so the admin would be responsible for deciding which accounts should have teacher or admin access.
 
 <a href="https://imgur.com/f4Hwlno"><img src="https://i.imgur.com/f4Hwlno.png" title="source: imgur.com" /></a>
 
-#### User#Show
-
 * An admin can also delete student subjects (and all associated student standards) from the User#Show page.
-
-IMAGE OF USERSHOW
 
 ### Students
 
