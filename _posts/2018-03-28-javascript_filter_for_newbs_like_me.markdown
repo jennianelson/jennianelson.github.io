@@ -25,7 +25,7 @@ In Ruby, a method returns the last executed line of code.  Not so in JavaScript.
 
 As an example, we'll user our yummyFoods array, and write a function that will allow us to specify what feature we have a craving for and give back to us the foods that have that feature.
 
-<a href="https://imgur.com/chsl6JW"><img src="https://i.imgur.com/chsl6JW.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/DMXv2jx"><img src="https://i.imgur.com/DMXv2jx.png" title="source: imgur.com" /></a>
 
 The first time I wrote one of these filter methods, I left out the return before the filter.  Then I wanted to write a conditional statement in the callback function, but the "if...then" logic is already inherently part how a callback function works.  If the callback returns true, the element you are currently working with will get pushed to the new array that filter() is building. It helps me to remember that I need to **return** the element and **return** the result of the callback (true or false).
 
