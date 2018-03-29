@@ -25,8 +25,42 @@ In Ruby, a method returns the last executed line of code.  Not so in JavaScript.
 
 As an example, we'll user our yummyFoods array, and write a function that will allow us to specify what feature we have a craving for and give back to us the foods that have that feature.
 
-<a href="https://imgur.com/K03PU1K"><img src="https://i.imgur.com/K03PU1K.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/chsl6JW"><img src="https://i.imgur.com/chsl6JW.png" title="source: imgur.com" /></a>
 
-The first time I wrote one of these filter methods, I left out the return before the filter.  Then I wanted to write a conditional statement in the callback function, but the "if...then" logic is already inherently part of the callback function.
+The first time I wrote one of these filter methods, I left out the return before the filter.  Then I wanted to write a conditional statement in the callback function, but the "if...then" logic is already inherently part how a callback function works.  If the callback returns true, the element you are currently working with will get pushed to the new array that filter() is building. It helps me to remember that I need to **return** the element and **return** the result of the callback (true or false).
 
 I look forward to reading this blog post a few months from now, rolling my eyes at my baby JavaScript self, and celebrating how far I've come.  For now, I'm moving on to **map()**!
+
+## Update after completing the "Filter and Map Lab":
+
+### SPOILER ALERT: I recommend doing this lab first before you read on!
+
+This lab works with an array of drivers for "Scuber", the hilarious company made up for these labs that involves carpooling people around on scooters
+
+One of the functions you are tasked to write is exactMatch().  It should take in the array of drivers and a "matcher"--a piece of data in the form of an object.
+
+<a href="https://imgur.com/nI2xFLo"><img src="https://i.imgur.com/nI2xFLo.png" title="source: imgur.com" /></a>
+
+Oh, did I struggle with this.  I tried all sorts of methods like include and split, but the format of the matcher made it difficult.
+
+I ended up doing what I knew would pass the test but would only work with this particular array of data.  
+
+<a href="https://imgur.com/VssU1F3"><img src="https://i.imgur.com/VssU1F3.png" title="source: imgur.com" /></a>
+
+We've learned as programmers that our code should  be flexible and reusable, so I knew there had to be a better way.  After passing all the tests, I took a look at the solution.
+
+<a href="https://imgur.com/jbHsWrT"><img src="https://i.imgur.com/jbHsWrT.png" title="source: imgur.com" /></a>
+
+At first I was like, "Hey! I tried a for...in loop!"  But other than that, I wasn't close to getting this right.  So I plugged in a *debugger* into the callback function to figure out how this works.
+
+line 25 *let matches* declares a variable (so far undefined) that we can use both inside the for...in loop and outside of it.  Remember that in the scope chain, variables have access to their parent scopes but not their children scopes.  We use let so that we can set the value of this variable in our for..in loop.
+
+The for...in loop allows us to access the key of the matcher.  It sets the value of matches to be true or false: true if the key of the driver is equivalent to the key of the matcher, and false otherwise.
+
+Then by returning matches on line 30, we are returning either true or false--the whole point of a callback function.  If matches is true, driver will get pushed to the filter array!
+
+
+
+
+
+
